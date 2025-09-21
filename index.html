@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriGuide - Healthy Eating on a Budget</title>
+  <meta name="description" content="Empowering low-income families to eat healthier within their budget with culturally relevant meal plans and local food resources">
+  <link rel="stylesheet" href="styles0.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+   <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <h1>🥗 NutriGuide</h1>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#meal-planner" class="nav-link">Meal Planner</a>
+        <a href="#stores" class="nav-link">Find Stores Nearby</a>
+        <a href="#education" class="nav-link">Learn</a>
+        
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Healthy Eating Within Your Budget</h1>
+      <p>Discover nutritious, culturally relevant meals that fit your family's budget and taste preferences</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">₹160-400</span>
+          <span class="stat-label">per serving</span>
+        </div>
+        <div class="stat">
+  <span class="stat-number">100+</span>
+  <span class="stat-label">Healthy Tips</span>
+</div>
+        <div class="stat">
+          <span class="stat-number">Local</span>
+          <span class="stat-label">store finder</span>
+        </div>
+      </div>
+      <button class="cta-button" onclick="scrollToSection('meal-planner')">Start Meal Planning</button>
+    </div>
+  </section>
+
+  <!-- Quick Actions -->
+  <section class="quick-actions">
+    <div class="container">
+      <h2>What would you like to do today?</h2>
+      <div class="action-grid">
+        <div class="action-card" onclick="scrollToSection('meal-planner')">
+          <div class="action-icon">📅</div>
+          <h3>Plan This Week's Meals</h3>
+          <p>Create a budget-friendly meal plan for your family</p>
+        </div>
+        <div class="action-card" onclick="scrollToSection('stores')">
+          <div class="action-icon">📍</div>
+          <h3>Find Affordable Stores</h3>
+          <p>Locate nearby budget-friendly grocery options</p>
+        </div>
+        <div class="action-card" onclick="scrollToSection('education')">
+          <div class="action-icon">🍲</div>
+          <h3>Find Nutrition Tips & Resources</h3>
+          <p>Discover simple budget-friendly nutrition tips rooted in local food traditions</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Meal Planner Section -->
+<section id="meal-planner" class="meal-planner">
+    <div class="container">
+      <h2>Weekly Meal Planner</h2>
+      <div class="planner-controls">
+        <div class="control-group">
+          <label for="budget">Weekly Budget (₹)</label>
+          <input type="number" id="budget" min="1600" max="16000" value=" ">
+        </div>
+        <div class="control-group">
+          <label for="family-size">Family Size</label>
+          <select id="family-size">
+            <option value="1">1 person</option>
+            <option value="2">2 people</option>
+            <option value="3">3 people</option>
+            <option value="4" selected>4 people</option>
+            <option value="5">5+ people</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="cuisine">Preferred Cuisine</label>
+          <select id="cuisine">
+            <option value="mixed">Mixed</option>
+            <option value="indian">Indian</option>
+            <option value="mexican">Mexican</option>
+            <option value="asian">Asian</option>
+            <option value="italian">Italian</option>
+            <option value="southern">Southern</option>
+            <option value="indian">Indian</option>
+            <option value="middle-eastern">Middle Eastern</option>
+          </select>
+        </div>
+<button id="generate-btn" class="generate-btn">Generate Meal Plan</button>
+      </div>
+
+      <div id="meal-plan-results" class="meal-plan-grid">
+        <!-- Meal plan will be generated here -->
+      </div>
+    </div>
+</section>
+
+
+
+  <!-- Store Locator -->
+  <section id="stores" class="stores">
+    <!-- Store Locator Section -->
+<section class="store-locator">
+    <div class="container">
+        <div class="store-search">
+            <input type="text" id="location-input" placeholder="Enter location (Pincode/City)">
+            <button onclick="findStores()">Find Stores</button>
+        </div>
+
+      <div class="store-types">
+        <h3>Types of Budget-Friendly Stores</h3>
+        <div class="store-type-grid">
+          <div class="store-type">
+            <h4>🏪 Discount Grocers</h4>
+            <p>D-Mart, Reliance Smart, Big Bazaar</p>
+            <span class="savings">Save 20-40%</span>
+          </div>
+          <div class="store-type">
+            <h4>🌾 Farmers Markets</h4>
+            <p>Fresh, local produce</p>
+            <span class="savings">Most accept UPI</span>
+          </div>
+          <div class="store-type">
+            <h4>🏬 Wholesale Stores</h4>
+            <p>Metro, Reliance Market (bulk buying)</p>
+            <span class="savings">Best for families 4+</span>
+          </div>
+          <div class="store-type">
+            <h4>🥫 Food Banks</h4>
+            <p>NGOs, Govt. Schemes</p>
+            <span class="savings">Free resources</span>
+          </div>
+        </div>
+      </div>
+      
+      <div id="map" style="width: 100%; height: 400px; margin-top: 20px;"></div>
+    <div id="store-list" class="store-list"></div>
+        <!-- Store locations will appear here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Nutrition Education -->
+  <section id="education" class="education">
+    <div class="container">
+      <h2>Nutrition Tips & Resources</h2>
+      <div class="education-grid">
+        <div class="education-card">
+          <h3>🥬 Maximize Nutrition on a Budget</h3>
+          <ul>
+            <li>Buy seasonal vegetables - they're cheaper and more nutritious</li>
+            <li>Frozen vegetables retain nutrients and last longer</li>
+            <li>Beans and lentils are protein powerhouses for less than ₹80/serving</li>
+            <li>Brown rice and oats provide sustained energy</li>
+          </ul>
+        </div>
+
+        <div class="education-card">
+          <h3>🛒 Smart Shopping Strategies</h3>
+          <ul>
+            <li>Shop sales and use coupons - can save 30%+</li>
+            <li>Buy generic brands - same nutrition, lower cost</li>
+            <li>Purchase whole chickens vs. parts (more economical)</li>
+            <li>Check unit prices to compare true value</li>
+          </ul>
+        </div>
+
+        <div class="education-card">
+          <h3>🍳 Meal Prep Magic</h3>
+          <ul>
+            <li>Cook large batches and freeze portions</li>
+            <li>Use versatile base ingredients (rice, beans, eggs)</li>
+            <li>Repurpose leftovers into new meals</li>
+            <li>Prep vegetables when you get home from shopping</li>
+          </ul>
+        </div>
+
+        <div class="education-card">
+          <h3>🌍 Cultural Food Wisdom</h3>
+          <ul>
+            <li>Traditional diets often emphasize affordable, nutritious foods</li>
+            <li>Explore local markets for authentic, budget-friendly ingredients</li>
+            <li>Learn from family recipes - they're proven crowd-pleasers</li>
+            <li>Adapt traditional recipes with available ingredients</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>NutritionCoach</h3>
+          <p>Empowering families to eat well within their means</p>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">PM Poshan Yojana</a></li>
+            <li><a href="#">State Nutrition Programs</a></li>
+            <li><a href="#">Local Food Banks</a></li>
+            <li><a href="#">Nutrition Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Recipe of the Week</a></li>
+<li><a href="#">Healthy Hacks</a></li>
+<li><a href="#">Family Favorites</a></li>
+<li><a href="#">Meet & Share</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 NutriGuide. Made with ❤️ for healthier communities.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll helper
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }
+    
+
+
+function applySubstitutions(meal) {
+  const subs = { "chicken": "lentils", "fish": "beans", "eggs": "tofu", "yogurt": "fruit" };
+  for (let [key, value] of Object.entries(subs)) {
+    if (meal.name.toLowerCase().includes(key)) {
+      meal.name = `${meal.name} (Substitute: ${value})`;
+      meal.cost = Math.round(meal.cost * 0.7);
+    }
+  }
+  return meal;
+}
+
+function pickRandom(arr) {
+  return arr.length ? arr[Math.floor(Math.random()*arr.length)] : {name:"Unknown", nutrition:{}, cost:50};
+}
+
+// Replace with your OpenAI API key
+const OPENAI_API_KEY = "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";
+
+// Call OpenAI
+async function askOpenAI(prompt) {
+  const res = await fetch("https://api.openai.com/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${OPENAI_API_KEY}`,
+    },
+    body: JSON.stringify({
+      model: "gpt-4o-mini", // fast & cheaper
+      messages: [{ role: "user", content: prompt }],
+    }),
+  });
+
+  const data = await res.json();
+  return data.choices?.[0]?.message?.content || "No response from AI.";
+}
+
+/* ------------------- Meal Planner ------------------- */
+async function generateMealPlan() {
+  const query = document.getElementById("meal-plan-query").value || "Weekly meal plan";
+
+  const prompt = `Create a detailed meal plan for: ${query}.
+  Include days, meals, and short descriptions.`;
+
+  const aiText = await askOpenAI(prompt);
+
+  const newWin = window.open("", "_blank");
+  newWin.document.write(`
+    <html>
+    <head>
+      <title>Meal Plan</title>
+      <style>
+        body { font-family: Arial; padding: 20px; background: #f0fff4; }
+        h1 { color: #2e8b57; }
+        .meal { margin: 8px 0; padding: 8px; background: #e8f5e9; border-radius: 6px; }
+      </style>
+    </head>
+    <body>
+      <h1>Meal Plan</h1>
+      <div id="meal-plan-content"><p>Loading...</p></div>
+    </body>
+    </html>
+  `);
+  newWin.document.close();
+
+  const content = newWin.document.getElementById("meal-plan-content");
+  content.innerHTML = aiText
+    .split("\n")
+    .map((line) => `<div class="meal">${line}</div>`)
+    .join("");
+}
+
+
+function calculateNutritionScore(nutrition) {
+  // Simple example: balance of macros
+  const { protein = 0, fat = 0, carbs = 0, fiber = 0 } = nutrition;
+  const total = protein + fat + carbs + fiber;
+  return total ? Math.round((protein + fiber) / total * 100) : 0;
+}
+
+function openMealPlanInNewTab(plan, weeklyTotal) {
+  const win = window.open("", "_blank");
+
+const style = `
+  body { font-family: Arial, sans-serif; padding: 20px; }
+  h1, h2, h3 { color: #333; }
+  .meal { display: flex; margin-bottom: 20px; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+  .meal img { width: 150px; height: 100px; object-fit: cover; margin-right: 20px; }
+  .meal-info p { margin: 4px 0; }
+  .nutrition-score { font-weight: bold; color: green; }
+  .total-cost { font-size: 1.5em; font-weight: bold; margin-top: 30px; }
+`;
+
+  win.document.write("<html><head><title>Weekly Meal Plan</title>");
+  win.document.write(`<style>${style}</style>`);
+  win.document.write("</head><body>");
+
+  win.document.write("<h1>🍽 Weekly Meal Plan</h1>");
+
+  plan.forEach(dayPlan => {
+    win.document.write(`<div class="meal-day"><h2>${dayPlan.day} (Cost: ₹${dayPlan.dayCost})</h2>`);
+    dayPlan.meals.forEach(meal => {
+      const score = calculateNutritionScore(meal.nutrition);
+      win.document.write(`
+        <div class="meal">
+          ${meal.image ? `<img src="${meal.image}" alt="${meal.name}">` : ""}
+          <div class="meal-info">
+            <h3>${meal.name}</h3>
+            <p>Calories: ${meal.nutrition.calories}</p>
+            <p>Protein: ${meal.nutrition.protein} g</p>
+            <p>Fat: ${meal.nutrition.fat} g</p>
+            <p>Carbs: ${meal.nutrition.carbs} g</p>
+            <p>Fiber: ${meal.nutrition.fiber} g</p>
+            <p class="nutrition-score">Nutrition Score: ${score}%</p>
+            <p>Cost: ₹${meal.cost}</p>
+          </div>
+        </div>
+      `);
+    });
+    win.document.write("</div>");
+  });
+
+  win.document.write(`<div class="total-cost">Weekly Total: ₹${weeklyTotal}</div>`);
+  win.document.write("</body></html>");
+  win.document.close();
+}
+
+document.getElementById("generate-btn").addEventListener("click", generateMealPlan);
+function displayRecipeDetails(meal) {
+  const recipe = {
+    "Oatmeal with Fruits": "Step 1: Boil oats. Step 2: Add fruits and serve.",
+    "Vegetable Stir Fry": "Step 1: Heat oil. Step 2: Stir-fry vegetables. Step 3: Serve hot.",
+    "Lentil Curry with Rice": "Step 1: Cook lentils. Step 2: Prepare curry. Step 3: Serve with rice.",
+    "Carrot Sticks with Hummus": "Step 1: Peel and cut carrots. Step 2: Serve with hummus."
+  };
+
+  document.getElementById("recipe-details").textContent = recipe[meal] || "Recipe not available.";
+}
+
+function findStores() {
+  const locationInput = document.getElementById("location-input").value;
+
+  if (locationInput.trim()) {
+    // Open Google Maps with entered pincode/city
+    window.open(
+      `https://www.google.com/maps/search/grocery+stores+near+${encodeURIComponent(locationInput)}`,
+      "_blank"
+    );
+  } else if (navigator.geolocation) {
+    // Use GPS if no location entered
+    navigator.geolocation.getCurrentPosition((pos) => {
+      const lat = pos.coords.latitude;
+      const lng = pos.coords.longitude;
+
+      window.open(
+        `https://www.google.com/maps/search/grocery+stores/@${lat},${lng},15z`,
+        "_blank"
+      );
+    }, () => {
+      alert("Unable to fetch location. Please enter a pincode or allow location access.");
+    });
+  } else {
+    alert("Please enter a pincode or allow location access.");
+  }
+}
+
+  </script>
+</body>
+</html>
