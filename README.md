@@ -1,4 +1,4 @@
-# NutriGuide_WithinYourBudget
+<img width="1898" height="829" alt="image" src="https://github.com/user-attachments/assets/2a69e7ae-e5f1-4f4d-a988-42f412112760" /><img width="1902" height="904" alt="Screenshot 2025-09-22 110606" src="https://github.com/user-attachments/assets/d7ce89dc-96fb-4a6e-b99e-b0958bf06491" /># NutriGuide_WithinYourBudget
 🌱 Nutrition Coach App
 
 Empowering low-income families to eat healthier within their budget
@@ -93,26 +93,30 @@ Empowers communities with knowledge + tools for better nutrition
 
 #Home Page:
 
-<img width="1919" height="884" alt="image" src="https://github.com/user-attachments/assets/280336e7-22fd-48e5-bdc0-d6746cd564ad" />
+<img width="1898" height="909" alt="image" src="https://github.com/user-attachments/assets/4487d169-5f71-4369-ab3b-d66e68cd889f" />
 
-<img width="1916" height="887" alt="image" src="https://github.com/user-attachments/assets/a7b999fa-4690-414b-9046-33c1af25eedb" />
+<img width="1899" height="906" alt="image" src="https://github.com/user-attachments/assets/ed6a0cda-e3bf-4612-8c0c-5ae4903f8570" />
 
 #Weekly Meal Planner Page
 
-<img width="1894" height="873" alt="image" src="https://github.com/user-attachments/assets/dedeae32-83c8-44a4-8463-44d6e0422b23" />
+<img width="1915" height="811" alt="image" src="https://github.com/user-attachments/assets/c3226a9f-782e-44b4-af4e-7490e669fc26" />
 
 <img width="1883" height="903" alt="image" src="https://github.com/user-attachments/assets/761baaec-9a7c-469e-9ae7-99c80f186d23" />
 
-
 #Find Stores Page
 
-<img width="1898" height="862" alt="image" src="https://github.com/user-attachments/assets/e797e7f3-907c-45dc-95e0-45a2b4b1d0a0" />
+<img width="1895" height="892" alt="image" src="https://github.com/user-attachments/assets/ae1ff547-45ea-405c-8e1b-170c4d119e28" />
 
 <img width="1908" height="909" alt="image" src="https://github.com/user-attachments/assets/9b451712-555a-4e28-89c8-4825a4d99720" />
 
 #Nutrition Tips & Resources Page
 
-<img width="1893" height="814" alt="image" src="https://github.com/user-attachments/assets/1d920103-ac29-4b85-b2fa-a6f4f270d6e6" />
+<img width="1897" height="892" alt="image" src="https://github.com/user-attachments/assets/b443ec26-5599-4384-9e08-c96bee71de24" />
 
 <img width="1896" height="911" alt="image" src="https://github.com/user-attachments/assets/eae07ff4-b1e7-4a41-ba76-8d217557e79a" />
 
+#Contact Me
+
+<img width="1897" height="895" alt="image" src="https://github.com/user-attachments/assets/c8f77800-281f-4f4e-8288-fceae6ea0ec5" />
+
+<img width="1901" height="891" alt="image" src="https://github.com/user-attachments/assets/b18f1bc0-8141-4ebe-a972-9012460d71df" />
