@@ -1,4 +1,4 @@
-<img width="1898" height="829" alt="image" src="https://github.com/user-attachments/assets/2a69e7ae-e5f1-4f4d-a988-42f412112760" /><img width="1902" height="904" alt="Screenshot 2025-09-22 110606" src="https://github.com/user-attachments/assets/d7ce89dc-96fb-4a6e-b99e-b0958bf06491" /># NutriGuide_WithinYourBudget
+# NutriGuide_WithinYourBudget
 🌱 Nutrition Coach App
 
 Empowering low-income families to eat healthier within their budget
@@ -93,6 +93,8 @@ Empowers communities with knowledge + tools for better nutrition
 
 #Home Page:
 
+<img width="1902" height="904" alt="Screenshot 2025-09-22 110606" src="https://github.com/user-attachments/assets/d7ce89dc-96fb-4a6e-b99e-b0958bf06491" />
+
 <img width="1898" height="909" alt="image" src="https://github.com/user-attachments/assets/4487d169-5f71-4369-ab3b-d66e68cd889f" />
 
 <img width="1899" height="906" alt="image" src="https://github.com/user-attachments/assets/ed6a0cda-e3bf-4612-8c0c-5ae4903f8570" />
@@ -116,6 +118,8 @@ Empowers communities with knowledge + tools for better nutrition
 <img width="1896" height="911" alt="image" src="https://github.com/user-attachments/assets/eae07ff4-b1e7-4a41-ba76-8d217557e79a" />
 
 #Contact Me
+
+<img width="1898" height="829" alt="image" src="https://github.com/user-attachments/assets/2a69e7ae-e5f1-4f4d-a988-42f412112760" />
 
 <img width="1897" height="895" alt="image" src="https://github.com/user-attachments/assets/c8f77800-281f-4f4e-8288-fceae6ea0ec5" />
 
