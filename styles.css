@@ -569,4 +569,96 @@ a:focus {
   outline-offset: 2px;
 }
 
-/*
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f9fc;
+}
+/*    */
+/* General styling for section */
+#contact {
+  background: radial-gradient(circle at top left, #fefefe, #e9f1f7);
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+#contact h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #0d1b2a;
+}
+
+/* Form labels and layout */
+#contactForm label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Label text */
+#contactForm label span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1b263b;
+}
+
+/* Input fields and textarea */
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ccd6dd;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Input focus effect */
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border-color: #468faf;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(70, 143, 175, 0.2);
+}
+
+/* Submit button */
+#contactForm button.btn {
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+#contactForm button.btn:hover {
+  background-color: #457b9d;
+}
+
+/* Status message */
+#formStatus {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1d3557;
+}
+section {
+  scroll-margin-top: 80px; /* Adjust based on your navbar height */
+}
