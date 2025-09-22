@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NutriGuide - Healthy Eating on a Budget</title>
   <meta name="description" content="Empowering low-income families to eat healthier within their budget with culturally relevant meal plans and local food resources">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles0.css">
 </head>
 
 <body>
@@ -14,7 +14,10 @@
    <nav class="navbar">
     <div class="nav-container">
       <div class="nav-brand">
-        <h1>🥗 NutriGuide</h1>
+        <div class="nav-brand">
+  <h1 onclick="scrollToSection('home')" style="cursor:pointer;">🥗 NutriGuide</h1>
+</div>
+
       </div>
       <div class="nav-menu" id="nav-menu">
         <a href="#home" class="nav-link">Home</a>
@@ -42,9 +45,9 @@
           <span class="stat-label">per serving</span>
         </div>
         <div class="stat">
-  <span class="stat-number">100+</span>
-  <span class="stat-label">Healthy Tips</span>
-</div>
+          <span class="stat-number">100+</span>
+          <span class="stat-label">Healthy Tips</span>
+        </div>
         <div class="stat">
           <span class="stat-number">Local</span>
           <span class="stat-label">store finder</span>
@@ -450,6 +453,10 @@ function findStores() {
     alert("Please enter a pincode or allow location access.");
   }
 }
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+}
+//Contact Me
 const form = document.getElementById('contactForm');
   const status = document.getElementById('formStatus');
 
